@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To-Do Lists</h1>
+    
+    <!-- Different List Sections -->
+    <div class="list-section">
+      <h2>Work Tasks</h2>
+      <form class="todo-form" data-list="work">
+        <input type="text" class="new-task" placeholder="Add a new work task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul class="task-list" id="work-list"></ul>
+    </div>
+
+    <div class="list-section">
+      <h2>Personal Tasks</h2>
+      <form class="todo-form" data-list="personal">
+        <input type="text" class="new-task" placeholder="Add a new personal task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul class="task-list" id="personal-list"></ul>
+    </div>
+
+    <div class="list-section">
+      <h2>Groceries</h2>
+      <form class="todo-form" data-list="groceries">
+        <input type="text" class="new-task" placeholder="Add a grocery item" required>
+        <button type="submit">Add Item</button>
+      </form>
+      <ul class="task-list" id="groceries-list"></ul>
+    </div>
+
+    <!-- You can add more lists below by following the same structure -->
+    <div class="list-section">
+      <h2>Fitness Tasks</h2>
+      <form class="todo-form" data-list="fitness">
+        <input type="text" class="new-task" placeholder="Add a new fitness task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul class="task-list" id="fitness-list"></ul>
+    </div>
+
+    <div class="list-section">
+      <h2>Shopping List</h2>
+      <form class="todo-form" data-list="shopping">
+        <input type="text" class="new-task" placeholder="Add a new shopping item" required>
+        <button type="submit">Add Item</button>
+      </form>
+      <ul class="task-list" id="shopping-list"></ul>
+    </div>
+
+    <div class="list-section">
+      <h2>Weekend Plans</h2>
+      <form class="todo-form" data-list="weekend">
+        <input type="text" class="new-task" placeholder="Add a new weekend task" required>
+        <button type="submit">Add Task</button>
+      </form>
+      <ul class="task-list" id="weekend-list"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
